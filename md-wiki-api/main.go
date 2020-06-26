@@ -3,7 +3,7 @@ package main
 import (
   "log"
   "net/http"
-  "./routes"
+  "github.com/armurei/planitar-assignment/md-wiki-api/routes"
 )
 
 func main() {

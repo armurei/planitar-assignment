@@ -16,3 +16,8 @@ docker run -ti -p 8080:8080 md-wiki:2019
 This will create a container from the image. The client will be accessible at
 http://localhost:8080, and the REST server will be accessible at
 http://localhost:8080/api/.
+
+## CI
+
+This project has also been set up with CI using Travis. View the build status
+here: https://travis-ci.org/github/armurei/planitar-assignment.
