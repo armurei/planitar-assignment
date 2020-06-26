@@ -1,0 +1,19 @@
+language: go
+
+go: 1.14.x
+
+matrix:
+  include:
+    - language: go
+      go: 1.14.x
+      before-script:
+        - cd md-wiki-api
+      script:
+        - go test ./...
+
+    - language: node_js
+      node_js: 12
+      before_script:
+        - cd md-wiki-client
+      script:
+        - npm t
