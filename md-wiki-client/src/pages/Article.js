@@ -18,7 +18,6 @@ function Article () {
 
   return (
     <Page>
-      <Header name={name} displayEditButton />
       <ReactCommonmark source={content} />
     </Page>
   )
