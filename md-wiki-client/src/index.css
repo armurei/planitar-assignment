@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #D4D2D5;
+  color: black;
 }
 
 code {
@@ -12,7 +14,43 @@ code {
     monospace;
 }
 
+a {
+  color: black;
+}
+
+a:visited {
+  color: #6E6A6F;
+}
+
 textarea {
-  width: 300px;
+  width: 100%;
   height: 300px;
+  border-radius: 4px;
+  outline: none;
+  background-color: #BFAFA6;
+}
+
+button {
+  padding: 8px;
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #6C698D;
+  color: #ddd;
+  transition: 0.2s color;
+}
+
+button:hover {
+  color: #fff;
+}
+
+label {
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: space-between;
 }

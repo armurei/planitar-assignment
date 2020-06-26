@@ -33,18 +33,20 @@ function EditArticle () {
         <form type='text' onSubmit={handleSave}>
           <textarea type='text' value={content} onChange={event => setContent(event.target.value)} />
         </form>}
-      <button onClick={handleSave}>
-        {uiStrings.saveButton}
-      </button>
-      <Link to={`/${name}`}>
-        <button>
-          {uiStrings.cancelButton}
+      <section>
+        <button onClick={handleSave}>
+          {uiStrings.saveButton}
         </button>
-      </Link>
-      <label>
-        <input type='checkbox' checked={previewing} onChange={() => setPreviewing(!previewing)} />
-        {uiStrings.previewToggle}
-      </label>
+        <Link to={`/${name}`}>
+          <button>
+            {uiStrings.cancelButton}
+          </button>
+        </Link>
+        <label>
+          <input type='checkbox' checked={previewing} onChange={() => setPreviewing(!previewing)} />
+          {uiStrings.previewToggle}
+        </label>
+      </section>
     </Page>
   )
 }
